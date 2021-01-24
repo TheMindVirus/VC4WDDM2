@@ -1,0 +1,2 @@
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\VC4WDDM2\ARM64\Debug\VC4WDDM2.sys
+C:\Users\cotaa\Documents\Visual Studio 2019\Projects\VC4WDDM2\ARM64\Debug\VC4WDDM2.pdb

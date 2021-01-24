@@ -1,0 +1,30 @@
+﻿  Building 'VC4WDDM2' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping ARM64\Debug\vc4wddm2.inf
+  Stamping [Version] section with DriverVer=01/24/2021,0.14.21.22
+  [INFO]: Pre-Build Event: Deploying Content Folder...
+  C:\Users\cotaa\Documents\Visual Studio 2019\Projects\VC4WDDM2\CopyFiles\devcon.exe
+  C:\Users\cotaa\Documents\Visual Studio 2019\Projects\VC4WDDM2\CopyFiles\install.bat
+  2 File(s) copied
+  main.c
+  display.c
+  Generating code
+  Finished generating code
+  VC4WDDM2.vcxproj -> C:\Users\cotaa\Documents\Visual Studio 2019\Projects\VC4WDDM2\ARM64\Debug\VC4WDDM2.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\cotaa\Documents\Visual Studio 2019\Projects\VC4WDDM2\ARM64\Debug\VC4WDDM2.sys
+  
+  Driver is 'Universal'.
+  ..........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\cotaa\Documents\Visual Studio 2019\Projects\VC4WDDM2\ARM64\Debug\VC4WDDM2\vc4wddm2.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\cotaa\Documents\Visual Studio 2019\Projects\VC4WDDM2\ARM64\Debug\VC4WDDM2\vc4wddm2.cat
+  
