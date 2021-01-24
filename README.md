@@ -9,7 +9,7 @@ Further development is required to bring to fruition the features that DirectX c
 
 ## Please use with caution, this repository is indended for educational purposes and testing. ##
 
-This project may be used as a template to aid the development and prototyping of graphics drivers for ARM64 platforms similar to the Raspberry Pi 4.
+This project may be used as a template to aid the development and prototyping of graphics drivers for ARM64 platforms similar to the Raspberry Pi 4 and VideoCore QPU.
 
 ## Requirements ##
 
