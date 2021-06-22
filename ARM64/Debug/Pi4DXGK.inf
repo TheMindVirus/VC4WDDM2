@@ -1,0 +1,89 @@
+[Version]
+Signature="$Windows NT$"
+Class=Display
+ClassGuid={4D36E968-E325-11CE-BFC1-08002BE10318}
+Provider=%ProviderName%
+DriverVer = 06/22/2021,19.40.6.271
+CatalogFile=Pi4DXGK.cat
+PnpLockdown=1
+
+[SourceDisksNames]
+0=%SourceDisk%
+
+[SourceDisksFiles]
+Pi4DXGK.sys=0
+; Pi4DXGK.dll=0
+
+[DestinationDirs]
+DefaultDestDir=12
+
+[Manufacturer]
+%ProviderName%=Pi4DXGK.Mfg,NTARM64
+
+; [ControlFlags]
+; ExcludeFromSelect=*
+
+[Pi4DXGK.Mfg.NTARM64]
+%DriverName%=Pi4DXGK,ROOT\SAMPLES\Pi4DXGK
+
+[Pi4DXGK]
+FeatureScore=FB
+CopyFiles=Pi4DXGK.Miniport ; ,Pi4DXGK.UserMode
+AddReg=Pi4DXGK_AddReg
+
+[Pi4DXGK.Miniport]
+Pi4DXGK.sys,,,%SERVICE_GRAPHICS%
+
+; [Pi4DXGK.UserMode]
+; Pi4DXGK.dll,,,%SERVICE_OVERWRITE%
+
+[Pi4DXGK_AddReg]
+HKR,,DriverName,%REG_MULTI_SZ%,Pi4DXGK.sys ; ,Pi4DXGK.dll
+HKLM,"SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler",EnablePreemption,%REG_DWORD%,0
+HKLM,"SYSTEM\CurrentControlSet\Control\GraphicsDrivers",TdrDebugMode,%REG_DWORD%,1
+HKLM,"SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MemoryManager",DirectFlipMemoryRequirement,%REG_DWORD%,0
+
+[Pi4DXGK.Services]
+AddService=Pi4DXGK,%SERVICE_INSTALL%,Pi4DXGK_Service_Install,Pi4DXGK_EventLog_Install
+
+[Pi4DXGK_EventLog_Install]
+AddReg=Pi4DXGK_EventLog_AddReg
+
+[Pi4DXGK_EventLog_AddReg]
+HKR,,EventMessageFile,%REG_EXPAND_SZ%,"%%SystemRoot%%\System32\IoLogMsg.dll"
+HKR,,TypesSupported,%REG_DWORD%,%SERVICE_EVENTS%
+
+[Pi4DXGK_Service_Install]
+ServiceType=%SERVICE_KERNEL_DRIVER%
+StartType=%SERVICE_DEMAND_START%
+ErrorControl=%SERVICE_ERROR_IGNORE%
+LoadOrderGroup=Video
+ServiceBinary=%12%\Pi4DXGK.sys
+
+[Strings]
+ProviderName="The"
+DriverName="Broadcom VideoCoreIV GPU"
+SourceDisk="Broadcom VideoCoreIV Windows Driver Installation Disk"
+Description="Broadcom VideoCoreIV GPU DirectX Graphics Kernel Driver (WDDMv2)"
+
+SERVICE_KERNEL_DRIVER=0x1
+SERVICE_INSTALL=0x2
+SERVICE_EVENTS=0x7
+
+SERVICE_BOOT_START=0x0
+SERVICE_SYSTEM_START=0x1
+SERVICE_AUTO_START=0x2
+SERVICE_DEMAND_START=0x3
+SERVICE_DISABLED=0x4
+
+SERVICE_ERROR_IGNORE=0x0
+SERVICE_ERROR_NORMAL=0x1
+SERVICE_ERROR_SEVERE=0x2
+SERVICE_ERROR_CRITICAL=0x3
+
+SERVICE_GRAPHICS=0x100
+SERVICE_OVERWRITE=0x4000
+
+REG_MULTI_SZ=0x00010000
+REG_EXPAND_SZ=0x00020000
+REG_DWORD=0x00010001

@@ -1,0 +1,30 @@
+﻿  Building 'Pi4DXGK' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping ARM64\Debug\Pi4DXGK.inf
+  Stamping [Version] section with DriverVer=06/22/2021,19.40.6.271
+  DRIVER.CXX
+  MBOX.CXX
+  Pi4BDD.CXX
+  Pi4DXGK.CXX
+  Pi4INTERFACE.CXX
+  Pi4WDDM2.CXX
+  Generating code
+  Finished generating code
+  Pi4DXGK.vcxproj -> C:\Users\Alastair\Documents\Visual Studio 2019\Projects\Pi4DXGK\ARM64\Debug\Pi4DXGK.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Alastair\Documents\Visual Studio 2019\Projects\Pi4DXGK\ARM64\Debug\Pi4DXGK.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\Alastair\Documents\Visual Studio 2019\Projects\Pi4DXGK\ARM64\Debug\Pi4DXGK\pi4dxgk.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Alastair\Documents\Visual Studio 2019\Projects\Pi4DXGK\ARM64\Debug\Pi4DXGK\pi4dxgk.cat
+  

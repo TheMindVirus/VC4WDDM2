@@ -1,7 +1,0 @@
-[CALL]: DriverEntry
-[CALL]: DriverEntry Complete
-[CALL]: DriverEntry
-[CALL]: DriverEntry Complete
-[CALL]: DxgkDdiAddDevice
-[CALL]: DxgkDdiRemoveDevice
-[CALL]: DxgkDdiUnloadDevice

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="DRIVER.HXX" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DRIVER.CXX" />
+    <ClCompile Include="Pi4DXGK.CXX" />
+    <ClCompile Include="Pi4BDD.CXX" />
+    <ClCompile Include="MBOX.CXX" />
+    <ClCompile Include="Pi4INTERFACE.CXX" />
+    <ClCompile Include="Pi4WDDM2.CXX" />
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="Pi4DXGK.INX" />
+  </ItemGroup>
+</Project>
