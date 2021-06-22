@@ -1,8 +1,6 @@
 # VC4WDDM2/Pi4DXGK-dev
 Skeleton DXGK Driver for developing Broadcom VideoCoreIV/VI GPU in Windows for Raspberry Pi 4
 
-Continuation of KMDF-X and UDF-Python: Windows Diagnostic and Compute/Render/Display Drivers for Raspberry Pi 4 in Low Peripheral Mode
-
 ## Status
 This is a skeleton driver demonstrating how to implement the boilerplate of callback functions provided by DXGK for developing Graphics Drivers.
 Further development is required to bring to fruition the features that DirectX can provide, and to perform Hardware Acceleration using the VideoCore VPU.
