@@ -11,7 +11,8 @@ This project may be used as a template to aid the development and prototyping of
 
 ## Requirements ##
 
-Visual Studio 2019 Community Edition with ARM64 WDK Installed (and C++ ARM64 Build Tools with Spectre Mitigated Libs)
+Visual Studio 2019 Community Edition with ARM64 WDK Installed \
+(and C++ ARM64 Build Tools with Spectre Mitigated Libs)
 
 Test Signing On with Windows 10 ARM Insider Build 21337 in Test Mode
 
